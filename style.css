@@ -1,0 +1,13 @@
+ /*
+Theme Name: solutionandrena
+Theme URI: https://andrenasolution.io
+Author: Jean-Philippe ANDRENA
+Author URI: http://andrenasolution.fr r
+Description: Mon deuxieme thème !
+Requires at least: WordPress 5.0
+Version: 1.0
+*/
+ 
+ body {
+     background-color: green;
+ }
