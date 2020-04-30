@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Thu Sep 05 2019 02:31:37 GMT+0000 (UTC)  -->
-<html data-wf-page="5d6de60d72061d01da826bb7" data-wf-site="5d68c92e8dfed9e8e859a331">
-<head>
-  <meta charset="utf-8">
-  <title>Contact Us</title>
-  <meta content="Contact Us" property="og:title">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
-  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
-
+<html <?php language_attributes(); ?> >
+ <head>
+   <title><?php bloginfo('name'); ?> &raquo; <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
+   <meta charset="<?php bloginfo( 'charset' ); ?>">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+   <?php wp_head(); ?>
+ </head>
+ <body <?php body_class(); ?>>
+   <header class="my-logo">
+   <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a></h1>
+ </header>
+ <?php wp_nav_menu( array( 'header-menu' => 'header-menu' ) ); ?>
